@@ -27,6 +27,3 @@ A browser extension designed to improve navigation within the Canvas LMS by addi
 ## Permissions
 * `storage`: To remember the bar's collapsed/expanded state.
 * `host permissions`: Access to `*.instructure.com/*` (or your specific Canvas domain) to inject the navigation bar.
-
-## License
-Distributed under the **MIT License**.
