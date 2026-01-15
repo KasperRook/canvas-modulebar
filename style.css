@@ -1,0 +1,46 @@
+/* Style the persistent module menu */
+.persistent-menu {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* When the sidebar is visible (slide-in effect) */
+.new-sidebar.visible {
+    transform: translateX(300px); /* Slide into view (adjust for sidebar width) */
+}
+.headerContainer {
+    position: relative; /* This makes the dropdown position relative to this container */
+}
+
+
+
+.newsidebar {
+    position: fixed; /* Fixed positioning for the sidebar */
+    top: 0; /* Aligns the sidebar to the top */
+    left: 0; /* Aligns the sidebar to the left */
+    width: 250px; /* Set a width for the sidebar */
+    height: 1000vh; /* Full viewport height */
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+    background-color: #2c3e50; /* Example background color */
+}
+
+.headerContainer {
+    position: relative; /* Keep dropdowns positioned relative to the header */
+}
+.moduleContainer {
+    max-height: 0; /* Start collapsed */
+    overflow: hidden; /* Hide overflow */
+    opacity: 0; /* Start invisible */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Animate height and opacity */
+}
+
+/* When open */
+.moduleContainer.open {
+    max-height: 300px; /* Set to a maximum height */
+    opacity: 1; /* Fully visible */
+}
+
+
+
