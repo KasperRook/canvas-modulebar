@@ -5,6 +5,21 @@
     <title>Canvas Modulebar</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="popup.css">
+    <style>
+        .tutorial-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #273540;
+            text-decoration: underline;
+            font-size: 12px;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .tutorial-link:hover {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -16,7 +31,7 @@
     
     <div class="button-container">
         <div class="button-wrapper">
-            <button class="button" id="chooseCoursesButton">Choose Favourite Courses</button>
+            <button class="button" id="chooseCoursesButton">Choose Favourite Courses for Top-Bar</button>
             <div class="info-icon-wrapper">
                 <span class="info-icon">i</span>
                 <div class="tooltip">
@@ -24,6 +39,7 @@
                 </div>
             </div>
         </div>
+        <a id="openTutorial" class="tutorial-link">How does it work? View tutorial</a>
     </div>
 
     <div class="footer">
@@ -33,5 +49,3 @@
     <script src="popup.js"></script>
 </body>
 </html>
-
-

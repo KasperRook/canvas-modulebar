@@ -1,11 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Event listener for the "Choose Favourite Courses" button
     const chooseCoursesButton = document.getElementById('chooseCoursesButton');
+    const tutorialLink = document.getElementById('openTutorial');
+    
+    const tutorialUrl = chrome.runtime.getURL('tutorial.html');
+
+    // Grote knop: opent zowel Canvas als de tutorial
     if (chooseCoursesButton) {
         chooseCoursesButton.addEventListener('click', function() {
-            // Opens the specified Canvas courses page
-            window.open('https://canvas.uva.nl/courses', '_blank'); 
+
+            window.open(tutorialUrl, '_blank');
+        });
+    }
+
+    // Tutorial link: opent alleen de tutorial
+    if (tutorialLink) {
+        tutorialLink.addEventListener('click', function() {
+            window.open(tutorialUrl, '_blank');
         });
     }
 });
-

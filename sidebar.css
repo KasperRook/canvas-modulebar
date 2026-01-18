@@ -1,0 +1,67 @@
+/* CSS for Prettier Canvas Sidebar */
+
+/* Main Header Container */
+.ic-app-header {
+		background-color: #e4e8e8 !important;
+		padding: 0.75rem 0.5rem !important;
+}
+
+/* Logo Mark */
+.ic-app-header .ic-app-header__logomark-container {
+		background-color: white !important;
+		top: 0rem !important;
+		left: 0rem !important;
+		position: absolute !important;
+}
+
+/* Avatar Customization */
+.ic-app-header .ic-avatar {
+		border-color: #273540 !important;
+}
+
+/* Navigation List Layout */
+.ic-app-header .ic-app-header__menu-list {
+		padding-top: calc(85px - 0.75rem + 0.5rem) !important;
+}
+
+/* Individual Menu Items */
+.ic-app-header .ic-app-header__menu-list-item {
+		padding: 0.25rem 0rem !important;
+}
+
+/* Menu Links and Icons */
+.ic-app-header .ic-app-header__menu-list-link {
+		padding: 0.25rem !important;
+		border-radius: 0.375rem !important;
+}
+
+.ic-app-header .ic-app-header__menu-list-link .ic-icon-svg {
+		fill: #273540 !important;
+}
+
+.ic-app-header .ic-app-header__menu-list-link .menu-item__text {
+		color: #273540 !important;
+		font-size: 12.5px;
+}
+
+/* Active State (Selected Menu Item) */
+.ic-app-header .ic-app-header__menu-list-item--active {
+		border-width: 0px !important;
+}
+
+.ic-app-header .ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
+		background-color: #273540 !important;
+}
+
+.ic-app-header .ic-app-header__menu-list-item--active .ic-icon-svg {
+		fill: white !important;
+}
+
+.ic-app-header .ic-app-header__menu-list-item--active .menu-item__text {
+		color: white !important;
+}
+
+/* Hiding Specific Navigation Elements */
+.ic-app-header .ic-app-header__menu-list-item:has(/*#global_nav_history_link, #global_nav_help_link,*/ #primaryNavToggle) {
+		display: none !important;
+}

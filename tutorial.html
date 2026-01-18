@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial - Canvas Modulebar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #273540;
+            --uva-blue: #002855;
+            --bg-light: #f8f9fa;
+            --text-dark: #333;
+            --text-muted: #666;
+            --border-color: #e8eaec;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 850px; /* Increased width to make the GIF larger */
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .header {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .header p {
+            margin: 10px 0 0;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .step {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .step-number {
+            background: var(--primary-blue);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+
+        .step-text h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: var(--uva-blue);
+        }
+
+        .step-text p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text-muted);
+        }
+
+        .media-container {
+            background: #eee;
+            border-radius: 8px;
+            margin: 20px 0 0 0; /* Adjusted margin since button is gone */
+            width: 100%;
+            min-height: 400px; /* Increased min-height for a larger look */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .media-container img, .media-container video {
+            width: 100%; /* Ensure it fills the wider container */
+            height: auto;
+            display: block;
+        }
+
+        .placeholder-text {
+            color: #999;
+            font-style: italic;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .highlight {
+            color: #d11;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Canvas Modulebar</h1>
+        <p>Tutorial: Favouriting Courses for Top-Bar</p>
+    </div>
+
+    <div class="content">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-text">
+                <h3>Go to 'All Courses'</h3>
+                <p>Navigate to your courses list in Canvas to manage your dashboard.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-text">
+                <h3>Click the stars</h3>
+                <p>Click the <span class="highlight">star icon (☆)</span> next to the courses you want to add to the top bar. Once the star turns yellow, it is a favourite.</p>
+            </div>
+        </div>
+
+        <div class="media-container">
+            <!-- Replace 'tutorial.gif' with the actual filename of your gif -->
+            <img src="tutorial.gif" alt="Tutorial on how to select favourites" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="placeholder-text" style="display:none;">[Place your tutorial.gif in the extension folder]</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Developed by Kasper Rook
+    </div>
+</div>
+
+</body>
+</html>
